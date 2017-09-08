@@ -1,0 +1,84 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:screenOrientation="portrait"
+    android:fillViewport="false">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="850dp"
+        tools:context="luckong.deliverydrivertiplog.results">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="850dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="20dp"
+            tools:context=".graphs"
+            android:id="@+id/frameLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/storeOweTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Weekly Tip Progress"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/graph"
+                android:layout_width="350dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/storeOweTitle"
+                android:layout_height="202dp" />
+
+            <TextView
+                android:id="@+id/numOfDeliveriesGraphTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Weekly Number of Deliveries"
+                android:layout_below="@+id/graph"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/numOfDeliveriesGraph"
+                android:layout_width="350dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/numOfDeliveriesGraphTitle"
+                android:layout_height="202dp" />
+
+            <TextView
+                android:id="@+id/walkAmountGraphTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Weekly Walk Amount"
+                android:layout_below="@+id/numOfDeliveriesGraph"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/walkAmountGraph"
+                android:layout_width="350dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/walkAmountGraphTitle"
+                android:layout_height="202dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

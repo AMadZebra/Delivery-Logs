@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:screenOrientation="portrait"
+    android:fillViewport="false">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="1050dp"
+    tools:context="luckong.deliverydrivertiplog.results"
+    android:background="#141d3c">
+
+    <TextView
+        android:id="@+id/logDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Todays Date"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#32cd32"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You Owe The Store: "
+        android:id="@+id/storeOweTitle"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/logDate"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$0"
+        android:id="@+id/storeOwe"
+        android:layout_marginTop="25dp"
+        android:textColor="#f00a0a"
+        android:background="@android:color/transparent"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/storeOweTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Total Credit Tips:"
+        android:id="@+id/creditTitle"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:layout_below="@+id/storeOwe"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$0"
+        android:id="@+id/creditAmount"
+        android:textColor="#07e51a"
+        android:inputType="numberDecimal"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/creditTitle"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Total Cash Tips:"
+        android:id="@+id/cashTitle"
+        android:layout_below="@+id/creditAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        android:textSize="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$0"
+        android:id="@+id/cashAmount"
+        android:inputType="numberDecimal"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="25dp"
+        android:textColor="#07e51a"
+        android:layout_below="@+id/cashTitle"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Total Tips Made: "
+        android:id="@+id/totalTipTitle"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/cashAmount"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$0"
+        android:id="@+id/totalTipAmount"
+        android:layout_marginTop="25dp"
+        android:textColor="#07e51a"
+        android:layout_below="@+id/totalTipTitle"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mileage: "
+        android:id="@+id/mileageTitle"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/totalTipAmount"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$0"
+        android:id="@+id/mileageAmount"
+        android:inputType="numberDecimal"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="25dp"
+        android:textColor="#00FFFF"
+        android:layout_below="@+id/mileageTitle"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Number of Deliveries: "
+        android:id="@+id/numOfDeliveriesTitle"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/mileageAmount"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/numOfDeliveries"
+        android:inputType="numberDecimal"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="25dp"
+        android:textColor="#00FFFF"
+        android:layout_below="@+id/numOfDeliveriesTitle"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You walk away with:"
+        android:id="@+id/walkTitle"
+        android:textSize="35dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/numOfDeliveries"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$0"
+        android:id="@+id/walkAmount"
+        android:layout_marginTop="25dp"
+        android:textSize="50dp"
+        android:textColor="#07e51a"
+        android:layout_below="@+id/walkTitle"
+        android:layout_centerHorizontal="true"
+     />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/walkAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:text="Change Values" />
+
+    <Button
+        android:id="@+id/finishEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editButton"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:text="Finish Changes" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Delete Day" />
+
+
+</RelativeLayout>
+</ScrollView>

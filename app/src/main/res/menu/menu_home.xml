@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="luckong.deliverydrivertiplog.home">
+
+    <item
+        android:id="@+id/action_results"
+        android:orderInCategory="100"
+        android:title="Finish Day"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_deleteLastDelivery"
+        android:orderInCategory="200"
+        android:title="Delete Last Delivery"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_statistics"
+        android:orderInCategory="300"
+        android:title="Statistics"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="400"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+</menu>

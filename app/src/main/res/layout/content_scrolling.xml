@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="portrait"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="luckong.deliverydrivertiplog.home"
+    tools:showIn="@layout/activity_home">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#85bb65"
+        android:text="Confirm" />
+
+    <EditText
+        android:id="@+id/priceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:backgroundTint="#07e51a"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/priceInput"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/priceInput"
+        android:layout_marginTop="32dp"
+        android:text="@string/price"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/priceInput"
+        android:layout_alignStart="@+id/priceInput"
+        android:layout_centerVertical="true"
+        android:text="@string/tip"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/tipInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/creditTip"
+        android:layout_alignRight="@+id/creditTip"
+        android:layout_below="@+id/creditTip"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:backgroundTint="#07e51a"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/creditPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/priceInput"
+        android:layout_alignRight="@+id/priceInput"
+        android:layout_alignTop="@+id/price"
+        android:text="Credit Card"
+        android:buttonTint="#32CD32"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/creditTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/priceInput"
+        android:layout_alignRight="@+id/priceInput"
+        android:layout_below="@+id/priceInput"
+        android:text="Credit Card"
+        android:buttonTint="#32CD32"
+        android:textColor="@android:color/background_light" />
+
+
+    <TextView
+        android:id="@+id/currentTipsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipInput"
+        android:layout_alignStart="@+id/tipInput"
+        android:layout_below="@+id/tipInput"
+        android:text="Tips Made: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/currentTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tipInput"
+        android:layout_toEndOf="@+id/currentTipsTitle"
+        android:layout_toRightOf="@+id/currentTipsTitle"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#32CD32" />
+
+    <TextView
+        android:id="@+id/numOfDeliveriesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currentTipsTitle"
+        android:layout_alignStart="@+id/currentTipsTitle"
+        android:layout_below="@+id/currentTipsTitle"
+        android:text="Number of Deliveries:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/numOfDeliveries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/numOfDeliveriesTitle"
+        android:layout_toEndOf="@+id/numOfDeliveriesTitle"
+        android:layout_toRightOf="@+id/numOfDeliveriesTitle"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/currentTotalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numOfDeliveriesTitle"
+        android:layout_alignStart="@+id/numOfDeliveriesTitle"
+        android:layout_below="@+id/numOfDeliveriesTitle"
+        android:text="Total Made: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/currentTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/currentTotalTitle"
+        android:layout_toEndOf="@+id/currentTotalTitle"
+        android:layout_toRightOf="@+id/currentTotalTitle"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#32CD32"/>
+
+
+</RelativeLayout>

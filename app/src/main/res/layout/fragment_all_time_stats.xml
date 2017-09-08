@@ -1,0 +1,268 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:screenOrientation="portrait"
+    android:fillViewport="false">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="luckong.deliverydrivertiplog.allTimeStats"
+    android:layout_width="match_parent"
+    android:layout_height="1300dp">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Tips made:"
+        android:id="@+id/allTimeTipsTitle"
+        android:textSize="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/logDate"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="allTimeTips"
+        android:id="@+id/allTimeTips"
+        android:layout_marginTop="25dp"
+        android:textColor="#32cd32"
+        android:background="@android:color/transparent"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/allTimeTipsTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="percentCredit"
+        android:id="@+id/percentCredit"
+        android:layout_marginTop="25dp"
+        android:textColor="#32cd32"
+        android:background="@android:color/transparent"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/allTimeTips"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=" of which were credit."
+        android:id="@+id/percentCreditTitle"
+        android:textSize="20dp"
+        android:layout_below="@+id/percentCredit"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Total Mileage made: "
+        android:id="@+id/allTimeMileageTitle"
+        android:textSize="20dp"
+        android:layout_below="@+id/percentCreditTitle"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="allTimeMileage"
+        android:id="@+id/allTimeMileage"
+        android:layout_marginTop="25dp"
+        android:textColor="#32cd32"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/allTimeMileageTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Total Deliveries Made: "
+        android:id="@+id/allTimeDeliveriesTitle"
+        android:textSize="20dp"
+        android:layout_below="@+id/allTimeMileage"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="allTimeDeliveries Deliveries."
+        android:id="@+id/allTimeDeliveries"
+        android:layout_marginTop="25dp"
+        android:textColor="#32cd32"
+        android:layout_below="@+id/allTimeDeliveriesTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Walk Total:"
+        android:id="@+id/allTimeWalkTitle"
+        android:textSize="20dp"
+        android:layout_below="@+id/allTimeDeliveries"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$allTimeWalk"
+        android:id="@+id/allTimeWalk"
+        android:layout_marginTop="25dp"
+        android:textColor="#32cd32"
+        android:layout_below="@+id/allTimeWalkTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Tip Average Per Day: "
+        android:id="@+id/allTimeAverageTipsTitle"
+        android:textSize="20dp"
+        android:layout_below="@+id/allTimeWalk"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$allTimeAverageTips per day"
+        android:id="@+id/allTimeAverageTips"
+        android:layout_marginTop="25dp"
+        android:textColor="#32cd32"
+        android:layout_below="@+id/allTimeAverageTipsTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Highest Tip Received: "
+        android:id="@+id/highestTipTitle"
+        android:textSize="20dp"
+        android:layout_below="@+id/allTimeAverageTips"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$highestTip"
+        android:id="@+id/highestTip"
+        android:layout_marginTop="25dp"
+        android:textColor="#32cd32"
+        android:layout_below="@+id/highestTipTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Record # of Deliveries in 1 day:"
+        android:id="@+id/mostNumberOfDeliveriesTitle"
+        android:textSize="20dp"
+        android:layout_below="@+id/highestTip"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="most number of deliveries"
+        android:id="@+id/mostNumberOfDeliveries"
+        android:layout_marginTop="25dp"
+        android:textColor="#32cd32"
+        android:layout_below="@+id/mostNumberOfDeliveriesTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Record Daily Tip Total: "
+        android:id="@+id/mostNumberOfTipsTitle"
+        android:textSize="20dp"
+        android:layout_below="@+id/mostNumberOfDeliveries"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="mostNumberofTips"
+        android:id="@+id/mostNumberOfTips"
+        android:layout_marginTop="25dp"
+        android:textColor="#32cd32"
+        android:layout_below="@+id/mostNumberOfTipsTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Total Value of Pizza Delivered: "
+        android:id="@+id/totalValueOfPizzaTitle"
+        android:textSize="20dp"
+        android:layout_below="@+id/mostNumberOfTips"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="totalValueOfPizza"
+        android:id="@+id/totalValueOfPizza"
+        android:layout_marginTop="25dp"
+        android:textColor="#32cd32"
+        android:layout_below="@+id/totalValueOfPizzaTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
+
+</ScrollView>
